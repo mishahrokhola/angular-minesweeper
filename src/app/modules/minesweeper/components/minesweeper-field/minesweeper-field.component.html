@@ -1,0 +1,11 @@
+<div>
+  <div class="row" *ngFor="let row of game">
+    <minesweeper-cell
+      *ngFor="let cell of row"
+      [game]="game"
+      [cell]="cell"
+      (mineClick)="handleMineClick()"
+      (cellOpen)="handleCellOpen($event)"
+    ></minesweeper-cell>
+  </div>
+</div>

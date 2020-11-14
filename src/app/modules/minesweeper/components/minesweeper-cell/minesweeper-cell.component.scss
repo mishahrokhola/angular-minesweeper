@@ -1,0 +1,59 @@
+.cell {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	color: #2e7fcb;
+	border: 1px solid #888888;
+	background-color: #dddddd;
+	transition: background-color 150ms;
+	font-size: 22px;
+	font-weight: 600;
+
+	&:hover {
+		background-color: #eeeeee;
+	}
+
+	&[class^='cell--'],
+	&[class*=' cell--'] {
+		background-color: transparent;
+
+		&:hover {
+			background-color: transparent;
+		}
+	}
+
+	&--2 {
+		color: #5e9754;
+	}
+
+	&--3 {
+		color: #d23e3e;
+	}
+
+	&--4 {
+		color: #7d26a0;
+	}
+
+	&--5 {
+		color: #f79429;
+	}
+
+	&--6 {
+		color: aqua;
+	}
+
+	&--7 {
+		color: black;
+	}
+
+	.flag-img {
+		width: 20px;
+		height: 20px;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}

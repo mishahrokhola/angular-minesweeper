@@ -1,0 +1,5 @@
+<span class="cell" [ngClass]="getCellClass()">
+	<img class="flag-img" *ngIf="cell.isFlagged" src="assets/icons/flag-solid.svg" alt="Flag" />
+
+	{{ cell.isOpen && cell.nearMinesCount !== 0 ? cell.nearMinesCount : '' }}
+</span>
